@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Crafter Stone Generation Blocks",
+    "icon": {
+      "value": "CUSTOM:HydrogenSulfide"
+    },
+    "showSearch": false
+  }
+}

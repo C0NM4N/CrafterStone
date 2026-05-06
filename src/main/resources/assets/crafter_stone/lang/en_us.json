@@ -1,0 +1,18 @@
+{
+  "effect.craft_stone.petrified_effect": "Petrified",
+  "item_group.craft_stone.crafter_stone_items": "Crafter Stone Items",
+  "item.craft_stone.nitro_plane_item": "Explosive Paper Airplane",
+  "effect.crafter_stone.petrified_effect": "Petrified",
+  "death.attack.acid": "%1$s dissolved in acid",
+  "death.attack.acid.player": "%1$s dissolved whilst trying to escape %2$s",
+  "death.attack.acid.item": "%1$s was dissolved by %2$s using %3$s",
+  "gui.crafter_stone.petrified_overlay.label_you_are_petrified": "You are petrified....",
+  "item.crafter_stone.sulfurid_acid_bucket": "Sulfurid Acid Bucket",
+  "fluid_type.crafter_stone.sulfurid_acid": "Sulfurid Acid",
+  "block.crafter_stone.sulfurid_acid": "Sulfurid Acid",
+  "fluid.crafter_stone.sulfurid_acid": "Sulfurid Acid",
+  "item.crafter_stone.statue_entity_spawn_egg": "Statue Entity Spawn Egg",
+  "entity.crafter_stone.statue_entity": "Statue Entity",
+  "block.crafter_stone.hydrogen_sulfide": "Hydrogen Sulfide",
+  "item_group.crafter_stone.crafter_stone_generation_blocks": "Crafter Stone Generation Blocks"
+}

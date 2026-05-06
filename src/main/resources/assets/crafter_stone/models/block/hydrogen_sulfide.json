@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "crafter_stone:block/petrified_overlay",
+    "particle": "crafter_stone:block/petrified_overlay"
+  },
+  "render_type": "translucent"
+}

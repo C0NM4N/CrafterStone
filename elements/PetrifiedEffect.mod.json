@@ -1,0 +1,79 @@
+{
+  "_fv": 85,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Petrified",
+    "icon": "petrified",
+    "color": {
+      "value": -13421773,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "BLOCK_REACH"
+        },
+        "amount": -100.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -100.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": -100.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "ENTITY_REACH"
+        },
+        "amount": -100.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "NAMETAG_RENDER_DISTANCE"
+        },
+        "amount": -100.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "equipmentSlot": "any",
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": -100.001,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onStarted": {
+      "name": "PetrifiedEffectEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "PetrifiedEffectOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "PetrifiedEffectEffectExpires"
+    }
+  }
+}

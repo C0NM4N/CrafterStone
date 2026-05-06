@@ -13,101 +13,6 @@
       }
     },
     {
-      "name": "NitroPlaneProjectileHitsBlock",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nitro_plane_projectile_hits_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/conman/crafterstone/procedures/NitroPlaneProjectileHitsBlockProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "NitroPlaneProjectileHitsLivingEntity",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nitro_plane_projectile_hits_living_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/conman/crafterstone/procedures/NitroPlaneProjectileHitsLivingEntityProcedure.java"
-        ]
-      }
-    },
-    {
-      "name": "CrafterStoneItems",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crafter_stone_items",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "NitroPlaneItem",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nitro_plane_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/conman/crafterstone/item/NitroPlaneItemItem.java",
-          "src/main/resources/assets/crafter_stone/models/item/nitro_plane_item.json"
-        ]
-      }
-    },
-    {
-      "name": "NitroPlane",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nitro_plane",
-      "metadata": {
-        "files": [
-          "src/main/java/net/conman/crafterstone/entity/NitroPlaneEntity.java"
-        ]
-      }
-    },
-    {
       "name": "PetrifiedEffectOnEffectActiveTick",
       "type": "procedure",
       "compiles": true,
@@ -214,24 +119,6 @@
       }
     },
     {
-      "name": "SulfuricAcid",
-      "type": "fluid",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sulfuric_acid",
-      "metadata": {
-        "files": [
-          "src/main/java/net/conman/crafterstone/block/SulfuricAcidBlock.java",
-          "src/main/resources/assets/crafter_stone/blockstates/sulfuric_acid.json",
-          "src/main/java/net/conman/crafterstone/item/SulfuricAcidItem.java",
-          "src/main/java/net/conman/crafterstone/fluid/types/SulfuricAcidFluidType.java",
-          "src/main/resources/assets/crafter_stone/models/block/sulfuric_acid.json",
-          "src/main/resources/assets/crafter_stone/models/item/sulfuric_acid_bucket.json",
-          "src/main/java/net/conman/crafterstone/fluid/SulfuricAcidFluid.java"
-        ]
-      }
-    },
-    {
       "name": "SulfuricAcidMobplayerCollidesBlock",
       "type": "procedure",
       "compiles": true,
@@ -325,23 +212,154 @@
           "src/main/java/net/conman/crafterstone/procedures/PetrifiedEffectEffectStartedappliedProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SulfuridAcid",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfurid_acid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/item/SulfuridAcidItem.java",
+          "src/main/resources/assets/crafter_stone/blockstates/sulfurid_acid.json",
+          "src/main/java/net/conman/crafterstone/fluid/SulfuridAcidFluid.java",
+          "src/main/resources/assets/crafter_stone/models/item/sulfurid_acid_bucket.json",
+          "src/main/resources/assets/crafter_stone/models/block/sulfurid_acid.json",
+          "src/main/java/net/conman/crafterstone/block/SulfuridAcidBlock.java",
+          "src/main/java/net/conman/crafterstone/fluid/types/SulfuridAcidFluidType.java"
+        ]
+      }
+    },
+    {
+      "name": "StatueEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statue_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/client/renderer/StatueEntityRenderer.java",
+          "src/main/resources/assets/crafter_stone/models/item/statue_entity_spawn_egg.json",
+          "src/main/java/net/conman/crafterstone/entity/StatueEntityEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "HydrogenSulfide",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_sulfide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/block/HydrogenSulfideBlock.java",
+          "src/main/resources/assets/crafter_stone/blockstates/hydrogen_sulfide.json",
+          "src/main/resources/assets/crafter_stone/models/block/hydrogen_sulfide.json",
+          "src/main/resources/data/crafter_stone/loot_table/blocks/hydrogen_sulfide.json",
+          "src/main/resources/assets/crafter_stone/models/item/hydrogen_sulfide.json"
+        ]
+      }
+    },
+    {
+      "name": "HydrogenSulfideBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_sulfide_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/HydrogenSulfideBlockDestroyedByExplosionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CrafterStoneGenerationBlocks",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafter_stone_generation_blocks",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "StatueEntityDebug",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statue_entity_debug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/world/inventory/StatueEntityDebugMenu.java",
+          "src/main/java/net/conman/crafterstone/client/gui/StatueEntityDebugScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "HydrogenSulfideOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_sulfide_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/HydrogenSulfideOnTickUpdateProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:SulfuricAcid"
-    ],
     "DAMAGE_TYPES:minecraft:no_knockback": [
       "CUSTOM:Acid"
     ],
     "DAMAGE_TYPES:minecraft:bypasses_armor": [
       "CUSTOM:Acid"
     ],
-    "ITEMS:crafter_stone:acid_proof": [
-      "TAG:c:glass_blocks",
-      "TAG:c:glass_panes"
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:HydrogenSulfide",
+      "~CUSTOM:SulfuridAcid"
+    ],
+    "ENTITIES:c:acid_proof": [
+      "CUSTOM:StatueEntity"
     ]
   },
   "tab_element_order": {},
@@ -351,22 +369,27 @@
       "item_group.craft_stone.crafter_stone_items": "Crafter Stone Items",
       "item.craft_stone.nitro_plane_item": "Explosive Paper Airplane",
       "effect.crafter_stone.petrified_effect": "Petrified",
-      "item_group.crafter_stone.crafter_stone_items": "Crafter Stone Items",
-      "item.crafter_stone.nitro_plane_item": "Explosive Paper Airplane",
-      "item.crafter_stone.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
-      "fluid.crafter_stone.sulfuric_acid": "Sulfuric Acid",
-      "fluid_type.crafter_stone.sulfuric_acid": "Sulfuric Acid",
-      "block.crafter_stone.sulfuric_acid": "Sulfuric Acid",
       "death.attack.acid": "%1$s dissolved in acid",
       "death.attack.acid.player": "%1$s dissolved whilst trying to escape %2$s",
       "death.attack.acid.item": "%1$s was dissolved by %2$s using %3$s",
-      "gui.crafter_stone.petrified_overlay.label_you_are_petrified": "You are petrified...."
+      "gui.crafter_stone.petrified_overlay.label_you_are_petrified": "You are petrified....",
+      "item.crafter_stone.sulfurid_acid_bucket": "Sulfurid Acid Bucket",
+      "fluid_type.crafter_stone.sulfurid_acid": "Sulfurid Acid",
+      "block.crafter_stone.sulfurid_acid": "Sulfurid Acid",
+      "fluid.crafter_stone.sulfurid_acid": "Sulfurid Acid",
+      "item.crafter_stone.statue_entity_spawn_egg": "Statue Entity Spawn Egg",
+      "entity.crafter_stone.statue_entity": "Statue Entity",
+      "block.crafter_stone.hydrogen_sulfide": "Hydrogen Sulfide",
+      "item_group.crafter_stone.crafter_stone_generation_blocks": "Crafter Stone Generation Blocks"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/conman/crafterstone/init/CrafterStoneModFluidTypes.java",
       "src/main/java/net/conman/crafterstone/init/CrafterStoneModFluids.java",
+      "src/main/java/net/conman/crafterstone/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModScreens.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModMenus.java",
       "src/main/java/net/conman/crafterstone/init/CrafterStoneModMobEffects.java",
       "src/main/java/net/conman/crafterstone/init/CrafterStoneModBlocks.java",
       "src/main/java/net/conman/crafterstone/init/CrafterStoneModItems.java",
