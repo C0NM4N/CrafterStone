@@ -1,0 +1,60 @@
+plugins {
+    id 'eclipse'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+version = '1.0'
+base.archivesName = "modid"
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = "21.1.213"
+
+    runs {
+        client {
+            client()
+
+            def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
+            if (mcreatorJvmOptions) {
+                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg ->
+                    jvmArgument(arg)
+                }
+            }
+        }
+        server {
+            server()
+        }
+
+        configureEach {
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        mcreator {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+
+apply from: 'mcreator.gradle'
+repositories {
+    mavenCentral()
+    maven { url "https://cursemaven.com" }
+    maven { url "https://maven.blamejared.com/" }
+}
+
+dependencies {
+    compileOnly "vazkii.patchouli:Patchouli:1.21.1-93-NEOFORGE:api"
+    runtimeOnly "curse.maven:patchouli-306770:7730942"
+    implementation "curse.maven:terrafirmacraft-302973:7875771"
+    implementation "curse.maven:cold-sweat-506194:7898055"
+    implementation "curse.maven:tfc-cold-sweat-1130934:7677902"
+    implementation "curse.maven:tfc-textile-cold-sweat-edition-1131271:7678182"
+}

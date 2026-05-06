@@ -1,0 +1,39 @@
+{
+  "_fv": 85,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_you_are_petrified",
+          "text": {
+            "fixedValue": "You are petrified...."
+          },
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "CENTER",
+          "x": 156,
+          "y": 102,
+          "locked": false
+        }
+      }
+    ],
+    "baseTexture": "petridied_overlay.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PetrifiedOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 16,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

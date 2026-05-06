@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "Crafter Stone Items",
+    "icon": {
+      "value": "CUSTOM:NitroPlaneItem"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "mod_elements": [
+    {
+      "name": "PetrifiedEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/potion/PetrifiedEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "NitroPlaneProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nitro_plane_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/NitroPlaneProjectileHitsBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "NitroPlaneProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nitro_plane_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/NitroPlaneProjectileHitsLivingEntityProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "CrafterStoneItems",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafter_stone_items",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "NitroPlaneItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nitro_plane_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/item/NitroPlaneItemItem.java",
+          "src/main/resources/assets/crafter_stone/models/item/nitro_plane_item.json"
+        ]
+      }
+    },
+    {
+      "name": "NitroPlane",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nitro_plane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/entity/NitroPlaneEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedEffectOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_effect_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedEffectOnEffectActiveTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedEffectActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_effect_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedEffectActiveTickConditionProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "petrified_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedEffectEffectExpiresProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedDamageHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_damage_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedDamageHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedPickupHandler",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_pickup_handler",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedPickupHandlerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SulfuricAcid",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfuric_acid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/block/SulfuricAcidBlock.java",
+          "src/main/resources/assets/crafter_stone/blockstates/sulfuric_acid.json",
+          "src/main/java/net/conman/crafterstone/item/SulfuricAcidItem.java",
+          "src/main/java/net/conman/crafterstone/fluid/types/SulfuricAcidFluidType.java",
+          "src/main/resources/assets/crafter_stone/models/block/sulfuric_acid.json",
+          "src/main/resources/assets/crafter_stone/models/item/sulfuric_acid_bucket.json",
+          "src/main/java/net/conman/crafterstone/fluid/SulfuricAcidFluid.java"
+        ]
+      }
+    },
+    {
+      "name": "SulfuricAcidMobplayerCollidesBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sulfuric_acid_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/SulfuricAcidMobplayerCollidesBlockProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Acid",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acid",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/crafter_stone/damage_type/acid.json"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_overlay_display_overlay_ingame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedOverlayDisplayOverlayIngameProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/conman/crafterstone/client/screens/PetrifiedOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "PetrifiedEffectEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_effect_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/conman/crafterstone/procedures/PetrifiedEffectEffectStartedappliedProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:SulfuricAcid"
+    ],
+    "DAMAGE_TYPES:minecraft:no_knockback": [
+      "CUSTOM:Acid"
+    ],
+    "DAMAGE_TYPES:minecraft:bypasses_armor": [
+      "CUSTOM:Acid"
+    ],
+    "ITEMS:crafter_stone:acid_proof": [
+      "TAG:c:glass_blocks",
+      "TAG:c:glass_panes"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "effect.craft_stone.petrified_effect": "Petrified",
+      "item_group.craft_stone.crafter_stone_items": "Crafter Stone Items",
+      "item.craft_stone.nitro_plane_item": "Explosive Paper Airplane",
+      "effect.crafter_stone.petrified_effect": "Petrified",
+      "item_group.crafter_stone.crafter_stone_items": "Crafter Stone Items",
+      "item.crafter_stone.nitro_plane_item": "Explosive Paper Airplane",
+      "item.crafter_stone.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
+      "fluid.crafter_stone.sulfuric_acid": "Sulfuric Acid",
+      "fluid_type.crafter_stone.sulfuric_acid": "Sulfuric Acid",
+      "block.crafter_stone.sulfuric_acid": "Sulfuric Acid",
+      "death.attack.acid": "%1$s dissolved in acid",
+      "death.attack.acid.player": "%1$s dissolved whilst trying to escape %2$s",
+      "death.attack.acid.item": "%1$s was dissolved by %2$s using %3$s",
+      "gui.crafter_stone.petrified_overlay.label_you_are_petrified": "You are petrified...."
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModFluidTypes.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModFluids.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModMobEffects.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModBlocks.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModItems.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModEntityRenderers.java",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModEntities.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/conman/crafterstone/init/CrafterStoneModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/conman/crafterstone/CrafterStoneMod.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/conman/crafterstone/client/ItemArms.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "crafter_stone",
+    "modName": "Crafter Stone",
+    "version": "1.0.0",
+    "author": "Conman",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [
+      "tfc",
+      "cold_sweat",
+      "textile"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.conman.crafterstone"
+  },
+  "mcreatorVersion": 202600114619
+}

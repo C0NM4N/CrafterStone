@@ -1,0 +1,29 @@
+{
+  "_fv": 85,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:NitroPlaneItem"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.snowball.throw"
+    },
+    "igniteFire": false,
+    "disableGravity": false,
+    "disableDiscarding": false,
+    "power": 0.7999999999999999,
+    "damage": 0.1,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "nitricpaper.png",
+    "modelWidth": 0.4,
+    "modelHeight": 0.4,
+    "onHitsBlock": {
+      "name": "NitroPlaneProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "NitroPlaneProjectileHitsLivingEntity"
+    }
+  }
+}

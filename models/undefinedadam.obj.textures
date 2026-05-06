@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "m_6f6286ae-cdc2-07f0-3da7-1ac09a7af8c7": "petrified_overlay"
+      }
+    }
+  }
+}
